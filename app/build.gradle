@@ -3,12 +3,12 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "kr.elvin.androidspeksample"
         minSdkVersion 19
-        targetSdkVersion 24
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
     }
@@ -30,9 +30,11 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
-    testCompile 'org.jetbrains.spek:spek-api:1.0.89'
-    testCompile 'org.jetbrains.spek:spek-junit-platform-engine:1.0.89'
-    testCompile 'org.junit.platform:junit-platform-runner:1.0.0-M2'
+    testCompile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    testCompile 'org.jetbrains.spek:spek-api:1.1.2'
+    testCompile 'org.jetbrains.spek:spek-subject-extension:1.1.2'
+    testCompile 'org.jetbrains.spek:spek-junit-platform-engine:1.1.2'
+    testCompile 'org.junit.platform:junit-platform-runner:1.0.0-M4'
 }
 
 repositories {
